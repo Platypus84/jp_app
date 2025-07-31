@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jp_app/features/screens/bottom_sheet_screen.dart';
 import 'package:jp_app/features/screens/home_screen.dart';
-import 'package:jp_app/features/screens/splash_screen.dart';
 import 'package:jp_app/theme/jp_app_theme.dart';
 
 class JPApp extends StatefulWidget {
@@ -14,8 +12,6 @@ class JPApp extends StatefulWidget {
 class _JPAppState extends State<JPApp> {
   @override
   Widget build(BuildContext context) {
-    List<String> flavors = ['All categories', 'Salty', 'Sweet', 'Drinks'];
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: jpAppTheme,

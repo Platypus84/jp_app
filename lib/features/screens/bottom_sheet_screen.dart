@@ -276,13 +276,13 @@ class JPBottomSheet extends StatelessWidget {
                               ),
                               TextButton(
                                 onPressed: () => {},
-                                child: Text('Large'),
                                 style: TextButton.styleFrom(
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(7),
                                   ),
                                   backgroundColor: Color(0xff636366),
                                 ),
+                                child: Text('Large'),
                               ),
                             ],
                           ),

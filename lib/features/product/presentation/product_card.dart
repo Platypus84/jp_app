@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
-import 'dart:ui';
 import 'package:jp_app/features/product/data/product.dart';
 
 class ProductCard extends StatelessWidget {

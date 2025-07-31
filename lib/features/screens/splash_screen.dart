@@ -3,7 +3,6 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:jp_app/common/elevated_button01.dart';
 import 'package:jp_app/features/screens/home_screen.dart';
-import 'package:jp_app/features/screens/bottom_sheet_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key, required this.flavors});
