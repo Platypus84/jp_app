@@ -21,4 +21,5 @@ flutter:
   assets:
     - assets/hintergründe/
     - assets/grafiken/
+    - assets/grafiken/ingredient_icons/
     - assets/details/
