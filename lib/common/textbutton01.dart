@@ -1,16 +1,23 @@
 import 'package:flutter/material.dart';
 
-class ElevatedButton02 extends StatelessWidget {
-  const ElevatedButton02({super.key});
+class TextButton01 extends StatelessWidget {
+  const TextButton01({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
+    return TextButton(
       style: ButtonStyle(
+        padding: WidgetStatePropertyAll(
+          EdgeInsets.symmetric(horizontal: 16, vertical: 16.0),
+        ),
+        shape: WidgetStatePropertyAll(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadiusGeometry.circular(10),
+          ),
+        ),
         backgroundColor: WidgetStatePropertyAll(Colors.transparent),
         // shadowColor: WidgetStatePropertyAll(Colors.black),
         // elevation: WidgetStatePropertyAll(7),
-        padding: WidgetStatePropertyAll(EdgeInsets.symmetric(horizontal: 24)),
         // shape: WidgetStatePropertyAll(
         //   RoundedRectangleBorder(
         //     borderRadius: BorderRadius.circular(12),
@@ -20,12 +27,11 @@ class ElevatedButton02 extends StatelessWidget {
           return Ink(
             decoration: const BoxDecoration(
               gradient: LinearGradient(
-                colors: [Color(0xff908cf5), Color(0xffbb8de1)],
+                colors: [Color(0xffbb8de1), Color(0xff908cf5)],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 stops: [0.0, 0.72],
               ),
-              borderRadius: BorderRadius.all(Radius.circular(12)),
             ),
             child: child,
           );
