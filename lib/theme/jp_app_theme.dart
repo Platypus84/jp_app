@@ -5,7 +5,7 @@ final ThemeData jpAppTheme = ThemeData(
   scaffoldBackgroundColor: Color.fromARGB(255, 0, 0, 0),
   textTheme: const TextTheme(
     headlineLarge: TextStyle(
-      fontSize: 22,
+      fontSize: 27.5,
       fontWeight: FontWeight.w900,
       height: 1.3,
       color: Colors.white,

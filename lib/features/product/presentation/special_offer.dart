@@ -49,7 +49,7 @@ class SpecialOffer extends StatelessWidget {
 
                       SizedBox(height: 3),
                       Text(
-                        'Delish began burger that tastes like heaven',
+                        'Delish began burger \nthat tastes like heaven',
                         style: Theme.of(context).textTheme.bodySmall,
                       ),
 
@@ -72,8 +72,8 @@ class SpecialOffer extends StatelessWidget {
           right: 32,
           child: Wrap(
             children: [
-              Icon(Icons.star, color: Colors.pink),
-              Text('4.8'),
+              Icon(Icons.star, size: 18, color: Color(0xffEA71C5)),
+              Text(' 4.8', style: TextStyle(fontSize: 13)),
             ],
           ),
         ),

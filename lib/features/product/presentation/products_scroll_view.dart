@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:jp_app/features/product/data/product.dart';
 import 'package:jp_app/features/product/presentation/product_card.dart';

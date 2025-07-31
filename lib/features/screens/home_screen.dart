@@ -1,14 +1,8 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:jp_app/common/categories_scrollview.dart';
-import 'package:jp_app/common/textbutton01.dart';
-import 'package:jp_app/features/product/data/product.dart';
 import 'package:jp_app/features/product/data/productlist.dart';
 import 'package:jp_app/features/product/presentation/products_scroll_view.dart';
 import 'package:jp_app/features/product/presentation/special_offer.dart';
-import 'package:jp_app/features/screens/product_details_screen.dart';
-import 'package:jp_app/features/product/presentation/product_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -49,6 +43,7 @@ class HomeScreen extends StatelessWidget {
                   'We Recommend',
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
+                SizedBox(height: 8),
                 ProductsScrollView(products: products),
               ],
             ),
