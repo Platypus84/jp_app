@@ -26,8 +26,8 @@ class SpecialOffer extends StatelessWidget {
           height: 300,
           child: Padding(
             padding: const EdgeInsets.symmetric(
-              horizontal: 5.0,
-              vertical: 24.0,
+              horizontal: 6.0,
+              vertical: 12.0,
             ),
             child: InkWell(
               child: Card(

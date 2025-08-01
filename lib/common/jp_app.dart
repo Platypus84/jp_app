@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jp_app/features/screens/home_screen.dart';
+import 'package:jp_app/features/screens/splash_screen.dart';
 import 'package:jp_app/theme/jp_app_theme.dart';
 
 class JPApp extends StatefulWidget {
@@ -15,7 +15,7 @@ class _JPAppState extends State<JPApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: jpAppTheme,
-      home: Scaffold(body: HomeScreen()),
+      home: Scaffold(body: SplashScreen(flavors: [])),
     );
   }
 }
