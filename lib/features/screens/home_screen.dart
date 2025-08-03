@@ -7,35 +7,34 @@ import 'package:jp_app/features/product/presentation/special_offer.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-  static List<String> flavors = ['All categories', 'Salty', 'Sweet', 'Drinks'];
-
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: EdgeInsets.only(top: 48, bottom: 16),
+      padding: EdgeInsets.only(left: 20, top: 20),
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage('assets/hintergründe/bg_mainscreen.png'),
           fit: BoxFit.cover,
         ),
       ),
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
+      child: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.max,
           children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 16.0),
-              child: Text(
-                'Choose Your Favorite \nSnack',
-                style: Theme.of(context).textTheme.headlineLarge,
-              ),
+            Text(
+              'Choose Your Favorite \nSnack',
+              style: Theme.of(context).textTheme.headlineLarge,
             ),
-            CategoriesScrollView(flavors: flavors),
-            SpecialOffer(),
+            SizedBox(height: 20),
+            CategoriesScrollView(),
+            SizedBox(height: 40),
+            Padding(
+              padding: const EdgeInsets.only(right: 20.0),
+              child: SpecialOffer(),
+            ),
+            SizedBox(height: 58),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -44,7 +43,13 @@ class HomeScreen extends StatelessWidget {
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
                 SizedBox(height: 8),
-                ProductsScrollView(products: products),
+                Padding(
+                  padding: const EdgeInsets.only(left: 16.0, top: 16.0),
+                  child: Transform.scale(
+                    scale: 1.1,
+                    child: ProductsScrollView(products: products),
+                  ),
+                ),
               ],
             ),
           ],

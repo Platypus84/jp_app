@@ -12,6 +12,7 @@ class ProductDetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 800,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(10),
@@ -24,7 +25,6 @@ class ProductDetailsScreen extends StatelessWidget {
           stops: [0.6, 1],
         ),
       ),
-      height: 800,
       child: Stack(
         clipBehavior: Clip.none,
         children: [
@@ -49,7 +49,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   child: Card(
                     key: Key('InfoCard'),
                     clipBehavior: Clip.hardEdge,
-                    // wichtig, dieser clip begrenzt Blur auf Card!
+                    // Reminder: wichtig, dieser clip begrenzt Blur auf Card!
                     color: Color.fromRGBO(255, 255, 255, 0.1),
                     shadowColor: Colors.transparent,
                     margin: EdgeInsets.all(0),
@@ -284,7 +284,6 @@ class ProductDetailsScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    // Elevated Buttons Small Medium Large
                     Row(
                       children: [
                         IconButton.outlined(
@@ -312,6 +311,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   ],
                 ),
                 Row(
+                  key: Key('RowWithElevatedButton01'),
                   children: [
                     Expanded(
                       child: ElevatedButton01(

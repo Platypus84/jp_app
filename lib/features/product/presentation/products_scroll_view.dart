@@ -19,7 +19,7 @@ class ProductsScrollView extends StatelessWidget {
         children: products
             .map(
               (product) => Theme(
-                // only way to achieve transparent backgrounds of the chips
+                // Reminder: einziger Weg für transparenten Hintergrund von Chips
                 data: Theme.of(
                   context,
                 ).copyWith(canvasColor: Color.fromRGBO(76, 97, 128, 1)),
